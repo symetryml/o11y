@@ -25,6 +25,7 @@ o11y/
 ├── otel_flagd/        Python: CLI/TUI for controlling OpenTelemetry Demo feature flags + load gen
 ├── otel_synth/        Python: Synthetic metric data generator with ground-truth anomaly labels
 ├── signals/           Python: Unified data access layer (Prometheus, Jaeger, OpenSearch, Datadog)
+├── docker/            Container build files for the Python services (dd_etl receiver image)
 └── GoProjects/
     ├── godf/          Go: Pandas-inspired DataFrame library
     ├── oteletl/       Go: Port of otel_etl pipeline
@@ -102,6 +103,15 @@ Learns statistical profiles from real metrics and generates synthetic data with 
 ### signals — Telemetry Data Access Layer
 
 Unified Python clients for Prometheus, Jaeger (gRPC), OpenSearch, and Datadog APIs. See [signals/](signals/).
+
+### docker — Container Builds
+
+Dockerfiles and build scripts for packaging the Python services as containers. Currently contains `dd-otel-container/`, which builds the `dd-etl-receiver` image (Python 3.11-slim) bundling `dd_etl` + `otel_etl` and exposing the Datadog intake API on port 8126.
+
+```bash
+cd docker/dd-otel-container
+./build-image.sh   # copies dd_etl/ and otel_etl/ from the repo root and builds dd-etl-receiver
+```
 
 ### GoProjects — Go Implementation
 
