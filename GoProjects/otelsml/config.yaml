@@ -1,0 +1,38 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4319
+      http:
+        endpoint: 0.0.0.0:4320
+
+processors:
+  smlprocessor:
+    # Path to schema YAML file (optional, can also set SML_SCHEMA_PATH env var)
+    schema_path: ${env:SML_SCHEMA_PATH:-}
+    window_seconds: 60
+    include_deltas: true
+    delta_windows: [5, 60]
+    entity_labels: [service_name]
+    # force_drop_labels: [trace_id, span_id]
+
+exporters:
+  # Wide-format CSV output (one row per timestamp/entity, features as columns)
+  smlexporter/csv:
+    format: csv
+    output_path: stdout
+
+  # JSON lines output (one line per metric data point)
+  smlexporter/json:
+    format: json
+    output_path: stdout
+
+  debug:
+    verbosity: basic
+
+service:
+  pipelines:
+    metrics:
+      receivers: [otlp]
+      processors: [smlprocessor]
+      exporters: [smlexporter/csv, debug]

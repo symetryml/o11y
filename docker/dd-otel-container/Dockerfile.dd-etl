@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install dependencies
+COPY dd_etl/requirements.txt /app/requirements-dd.txt
+COPY otel_etl/requirements.txt /app/requirements-otel.txt
+RUN pip install --no-cache-dir -r /app/requirements-dd.txt -r /app/requirements-otel.txt
+
+# Copy both packages
+COPY otel_etl/ /app/otel_etl/
+COPY dd_etl/ /app/dd_etl/
+
+EXPOSE 8126
+
+CMD ["python", "-c", "from dd_etl.main import start_receiver; start_receiver(host='0.0.0.0', port=8126)"]

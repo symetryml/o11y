@@ -1,0 +1,715 @@
+{
+  "scenario": "all_failures_5mins",
+  "events": [
+    {
+      "action": "flag_snapshot",
+      "anomaly": false,
+      "ts": "2026-03-04T04:53:29.893Z"
+    },
+    {
+      "action": "flag_snapshot",
+      "anomaly": false,
+      "ts": "2026-03-04T04:57:20.466Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "all",
+      "anomaly": false,
+      "ts": "2026-03-04T04:57:20.726Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentFailure",
+      "variant": "100%",
+      "anomaly": true,
+      "ts": "2026-03-04T04:57:21.072Z"
+    },
+    {
+      "action": "flag_snapshot",
+      "anomaly": false,
+      "ts": "2026-03-04T05:00:37.575Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "all",
+      "anomaly": false,
+      "ts": "2026-03-04T05:00:37.815Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentFailure",
+      "variant": "100%",
+      "anomaly": true,
+      "ts": "2026-03-04T05:00:38.060Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "paymentFailure",
+      "anomaly": false,
+      "ts": "2026-03-04T05:03:03.913Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "imageSlowLoad",
+      "variant": "10sec",
+      "anomaly": true,
+      "ts": "2026-03-04T05:03:04.140Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "imageSlowLoad",
+      "anomaly": false,
+      "ts": "2026-03-04T05:05:29.419Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "adHighCpu",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:05:29.659Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "adHighCpu",
+      "anomaly": false,
+      "ts": "2026-03-04T05:07:55.503Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "adManualGc",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:07:55.744Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "adManualGc",
+      "anomaly": false,
+      "ts": "2026-03-04T05:10:20.957Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "adFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:10:21.191Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "adFailure",
+      "anomaly": false,
+      "ts": "2026-03-04T05:12:45.846Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "kafkaQueueProblems",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:12:46.097Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "kafkaQueueProblems",
+      "anomaly": false,
+      "ts": "2026-03-04T05:15:11.684Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "cartFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:15:12.004Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "cartFailure",
+      "anomaly": false,
+      "ts": "2026-03-04T05:17:37.796Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentUnreachable",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:17:38.025Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "paymentUnreachable",
+      "anomaly": false,
+      "ts": "2026-03-04T05:20:04.451Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "emailMemoryLeak",
+      "variant": "10000x",
+      "anomaly": true,
+      "ts": "2026-03-04T05:20:04.683Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "emailMemoryLeak",
+      "anomaly": false,
+      "ts": "2026-03-04T05:22:30.289Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "productCatalogFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:22:30.513Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "productCatalogFailure",
+      "anomaly": false,
+      "ts": "2026-03-04T05:24:56.448Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "recommendationCacheFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:24:56.692Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "recommendationCacheFailure",
+      "anomaly": false,
+      "ts": "2026-03-04T05:27:22.935Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "loadGeneratorFloodHomepage",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:27:23.222Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "loadGeneratorFloodHomepage",
+      "anomaly": false,
+      "ts": "2026-03-04T05:29:49.165Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "llmInaccurateResponse",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:29:49.410Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "llmInaccurateResponse",
+      "anomaly": false,
+      "ts": "2026-03-04T05:32:14.943Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "llmRateLimitError",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-04T05:32:15.258Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "llmRateLimitError",
+      "anomaly": false,
+      "ts": "2026-03-04T05:34:42.295Z"
+    },
+    {
+      "action": "flag_restore",
+      "anomaly": false,
+      "ts": "2026-03-04T05:34:42.741Z"
+    },
+    {
+      "action": "flag_snapshot",
+      "anomaly": false,
+      "ts": "2026-03-12T17:22:35.702Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "all",
+      "anomaly": false,
+      "ts": "2026-03-12T17:22:36.170Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentFailure",
+      "variant": "100%",
+      "anomaly": true,
+      "ts": "2026-03-12T17:22:36.663Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "paymentFailure",
+      "anomaly": false,
+      "ts": "2026-03-12T17:24:37.276Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "imageSlowLoad",
+      "variant": "10sec",
+      "anomaly": true,
+      "ts": "2026-03-12T17:25:14.550Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "imageSlowLoad",
+      "anomaly": false,
+      "ts": "2026-03-12T17:27:15.135Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "adHighCpu",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:27:52.452Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "adHighCpu",
+      "anomaly": false,
+      "ts": "2026-03-12T17:29:52.958Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "adManualGc",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:30:29.904Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "adManualGc",
+      "anomaly": false,
+      "ts": "2026-03-12T17:32:30.418Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "adFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:33:07.854Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "adFailure",
+      "anomaly": false,
+      "ts": "2026-03-12T17:35:08.399Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "kafkaQueueProblems",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:35:45.306Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "kafkaQueueProblems",
+      "anomaly": false,
+      "ts": "2026-03-12T17:37:45.854Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "cartFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:38:23.544Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "cartFailure",
+      "anomaly": false,
+      "ts": "2026-03-12T17:40:24.149Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentUnreachable",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:41:01.407Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "paymentUnreachable",
+      "anomaly": false,
+      "ts": "2026-03-12T17:43:01.960Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "emailMemoryLeak",
+      "variant": "10000x",
+      "anomaly": true,
+      "ts": "2026-03-12T17:43:39.051Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "emailMemoryLeak",
+      "anomaly": false,
+      "ts": "2026-03-12T17:45:39.552Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "productCatalogFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:46:16.778Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "productCatalogFailure",
+      "anomaly": false,
+      "ts": "2026-03-12T17:48:17.348Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "recommendationCacheFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:48:54.942Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "recommendationCacheFailure",
+      "anomaly": false,
+      "ts": "2026-03-12T17:50:55.475Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "loadGeneratorFloodHomepage",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:51:32.228Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "loadGeneratorFloodHomepage",
+      "anomaly": false,
+      "ts": "2026-03-12T17:53:32.848Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "llmInaccurateResponse",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:54:09.153Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "llmInaccurateResponse",
+      "anomaly": false,
+      "ts": "2026-03-12T17:56:09.669Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "llmRateLimitError",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-12T17:56:48.614Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "llmRateLimitError",
+      "anomaly": false,
+      "ts": "2026-03-12T17:58:49.152Z"
+    },
+    {
+      "action": "flag_restore",
+      "anomaly": false,
+      "ts": "2026-03-12T17:59:27.021Z"
+    },
+    {
+      "action": "flag_snapshot",
+      "anomaly": false,
+      "ts": "2026-03-18T17:30:40.097Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "all",
+      "anomaly": false,
+      "ts": "2026-03-18T17:30:40.597Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentFailure",
+      "variant": "100%",
+      "anomaly": true,
+      "ts": "2026-03-18T17:30:41.068Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "paymentFailure",
+      "anomaly": false,
+      "ts": "2026-03-18T17:32:41.824Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "imageSlowLoad",
+      "variant": "10sec",
+      "anomaly": true,
+      "ts": "2026-03-18T17:33:12.698Z"
+    },
+    {
+      "action": "flag_snapshot",
+      "anomaly": false,
+      "ts": "2026-03-18T17:33:59.232Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "all",
+      "anomaly": false,
+      "ts": "2026-03-18T17:33:59.760Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentFailure",
+      "variant": "100%",
+      "anomaly": true,
+      "ts": "2026-03-18T17:34:00.225Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "paymentFailure",
+      "anomaly": false,
+      "ts": "2026-03-18T17:36:00.757Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "imageSlowLoad",
+      "variant": "10sec",
+      "anomaly": true,
+      "ts": "2026-03-18T17:36:31.776Z"
+    },
+    {
+      "action": "flag_snapshot",
+      "anomaly": false,
+      "ts": "2026-03-18T17:41:56.037Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "all",
+      "anomaly": false,
+      "ts": "2026-03-18T17:41:56.549Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentFailure",
+      "variant": "100%",
+      "anomaly": true,
+      "ts": "2026-03-18T17:41:57.099Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "paymentFailure",
+      "anomaly": false,
+      "ts": "2026-03-18T17:43:57.907Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "imageSlowLoad",
+      "variant": "10sec",
+      "anomaly": true,
+      "ts": "2026-03-18T17:44:44.390Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "imageSlowLoad",
+      "anomaly": false,
+      "ts": "2026-03-18T17:46:45.135Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "adHighCpu",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T17:47:32.014Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "adHighCpu",
+      "anomaly": false,
+      "ts": "2026-03-18T17:49:32.555Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "adManualGc",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T17:50:19.750Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "adManualGc",
+      "anomaly": false,
+      "ts": "2026-03-18T17:52:20.325Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "adFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T17:53:07.496Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "adFailure",
+      "anomaly": false,
+      "ts": "2026-03-18T17:55:08.131Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "kafkaQueueProblems",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T17:55:55.248Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "kafkaQueueProblems",
+      "anomaly": false,
+      "ts": "2026-03-18T17:57:55.870Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "cartFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T17:58:42.163Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "cartFailure",
+      "anomaly": false,
+      "ts": "2026-03-18T18:00:42.721Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentUnreachable",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T18:01:29.901Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "paymentUnreachable",
+      "anomaly": false,
+      "ts": "2026-03-18T18:03:30.517Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "emailMemoryLeak",
+      "variant": "10000x",
+      "anomaly": true,
+      "ts": "2026-03-18T18:04:17.779Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "emailMemoryLeak",
+      "anomaly": false,
+      "ts": "2026-03-18T18:06:18.356Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "productCatalogFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T18:07:04.552Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "productCatalogFailure",
+      "anomaly": false,
+      "ts": "2026-03-18T18:09:05.395Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "recommendationCacheFailure",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T18:09:52.679Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "recommendationCacheFailure",
+      "anomaly": false,
+      "ts": "2026-03-18T18:11:53.282Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "loadGeneratorFloodHomepage",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T18:12:39.296Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "loadGeneratorFloodHomepage",
+      "anomaly": false,
+      "ts": "2026-03-18T18:14:39.770Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "llmInaccurateResponse",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T18:15:27.988Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "llmInaccurateResponse",
+      "anomaly": false,
+      "ts": "2026-03-18T18:17:28.520Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "llmRateLimitError",
+      "variant": "on",
+      "anomaly": true,
+      "ts": "2026-03-18T18:18:15.665Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "llmRateLimitError",
+      "anomaly": false,
+      "ts": "2026-03-18T18:20:16.223Z"
+    },
+    {
+      "action": "flag_restore",
+      "anomaly": false,
+      "ts": "2026-03-18T18:21:03.011Z"
+    },
+    {
+      "action": "flag_snapshot",
+      "anomaly": false,
+      "ts": "2026-03-18T19:22:33.327Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "all",
+      "anomaly": false,
+      "ts": "2026-03-18T19:22:33.858Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "paymentFailure",
+      "variant": "100%",
+      "anomaly": true,
+      "ts": "2026-03-18T19:22:34.361Z"
+    },
+    {
+      "action": "flag_reset",
+      "flag": "paymentFailure",
+      "anomaly": false,
+      "ts": "2026-03-18T19:24:34.988Z"
+    },
+    {
+      "action": "flag_set",
+      "flag": "imageSlowLoad",
+      "variant": "10sec",
+      "anomaly": true,
+      "ts": "2026-03-18T19:25:21.486Z"
+    }
+  ]
+}

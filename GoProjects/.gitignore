@@ -1,0 +1,39 @@
+# Go binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+otelsml/otelsml
+otelsml/cmd/otelsml/otelsml
+otelsml/otelsmlcli
+otelsml/cmd/otelsmlcli/otelsmlcli
+demclient/demcli
+demclient/cmd/demcli/demcli
+
+# Test binaries
+*.test
+
+# Go build cache
+vendor/
+
+# Go module cache (keep go.sum, ignore downloaded modules)
+go/pkg/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test output
+*.out
+*.prof
+
+# Generated parity test data (large, regenerate with generate_parity.py)
+oteletl/testdata/parity.json

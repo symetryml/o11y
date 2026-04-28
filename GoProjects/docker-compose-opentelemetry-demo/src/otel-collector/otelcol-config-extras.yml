@@ -1,0 +1,16 @@
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
+# extra settings to be merged into OpenTelemetry Collector configuration
+# do not delete this file
+
+exporters:
+  otlphttp/otelsml:
+    endpoint: http://otelsml:4320
+    tls:
+      insecure: true
+
+service:
+  pipelines:
+    metrics:
+      exporters: [otlp_http/prometheus, debug, otlphttp/otelsml]

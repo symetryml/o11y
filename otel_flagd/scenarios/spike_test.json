@@ -1,0 +1,47 @@
+{
+  "scenario": "spike_test",
+  "events": [
+    {
+      "action": "load_start",
+      "users": 5,
+      "spawn_rate": 1.0,
+      "anomaly": false,
+      "mode": "normal",
+      "ts": "2026-02-27T18:48:42.527Z"
+    },
+    {
+      "action": "load_start",
+      "users": 20,
+      "spawn_rate": 2.0,
+      "anomaly": true,
+      "mode": "high",
+      "run_time": "2m",
+      "ts": "2026-02-27T18:48:47.809Z"
+    },
+    {
+      "action": "load_start",
+      "users": 5,
+      "spawn_rate": 1.0,
+      "anomaly": false,
+      "mode": "normal",
+      "ts": "2026-02-27T18:50:48.098Z"
+    },
+    {
+      "action": "load_start",
+      "users": 5,
+      "spawn_rate": 1.0,
+      "anomaly": false,
+      "mode": "normal",
+      "ts": "2026-02-27T18:52:22.626Z"
+    },
+    {
+      "action": "load_start",
+      "users": 20,
+      "spawn_rate": 2.0,
+      "anomaly": true,
+      "mode": "high",
+      "run_time": "2m",
+      "ts": "2026-02-27T18:52:27.941Z"
+    }
+  ]
+}

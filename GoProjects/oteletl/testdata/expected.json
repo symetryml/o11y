@@ -1,0 +1,309 @@
+{
+  "status_bucket": {
+    "http_200": "success",
+    "http_404": "client_error",
+    "http_500": "server_error",
+    "grpc_0": "success",
+    "grpc_13": "server_error",
+    "auto_200": "success",
+    "auto_0": "success"
+  },
+  "method_bucket": {
+    "GET": "read",
+    "POST": "write",
+    "DELETE": "write",
+    "HEAD": "read",
+    "CONNECT": "other",
+    "WEIRD": "unknown"
+  },
+  "operation_bucket": {
+    "SELECT": "read",
+    "INSERT": "write",
+    "GetUser": "read",
+    "CreateOrder": "write",
+    "StreamEvents": "stream"
+  },
+  "route_param": {
+    "uuid": "/api/users/{uuid}/profile",
+    "numeric_id": "/api/orders/{id}/items",
+    "date": "/api/reports/{date}",
+    "plain": "/api/health"
+  },
+  "classify_label": {
+    "service_name": {
+      "category": "resource",
+      "bucket_type": ""
+    },
+    "status_code": {
+      "category": "signal",
+      "bucket_type": "status_code"
+    },
+    "http_method": {
+      "category": "dimension",
+      "bucket_type": "http_method"
+    },
+    "trace_id": {
+      "category": "correlation",
+      "bucket_type": ""
+    },
+    "le": {
+      "category": "internal",
+      "bucket_type": ""
+    }
+  },
+  "is_entity_label": {
+    "service_name": true,
+    "instance": true,
+    "trace_id": false,
+    "http_method": false
+  },
+  "metric_family": {
+    "http_requests_total": "http_requests",
+    "http_request_duration_bucket": "http_request_duration",
+    "http_request_duration_sum": "http_request_duration",
+    "cpu_usage": "cpu_usage"
+  },
+  "metric_type": {
+    "http_requests_total": "counter",
+    "http_request_duration_bucket": "histogram",
+    "http_request_duration_sum": "histogram_component",
+    "cpu_usage": "gauge"
+  },
+  "histogram_percentiles": {
+    "p50": 0.5714285714285714,
+    "p90": 2.0,
+    "p99": 5.0
+  },
+  "denormalize_full": {
+    "nrows": 4,
+    "ncols": 26,
+    "columns": [
+      "cpu_usage__last",
+      "cpu_usage__max",
+      "cpu_usage__mean",
+      "cpu_usage__min",
+      "cpu_usage__stddev",
+      "http_request_duration__count",
+      "http_request_duration__mean",
+      "http_request_duration__p50",
+      "http_request_duration__p75",
+      "http_request_duration__p90",
+      "http_request_duration__p95",
+      "http_request_duration__p99",
+      "http_request_duration__sum",
+      "http_requests__count__client_error",
+      "http_requests__count__server_error",
+      "http_requests__count__success",
+      "http_requests__rate__client_error",
+      "http_requests__rate__server_error",
+      "http_requests__rate__success",
+      "memory_usage__last",
+      "memory_usage__max",
+      "memory_usage__mean",
+      "memory_usage__min",
+      "memory_usage__stddev"
+    ],
+    "has_timestamp": true,
+    "has_entity_key": true,
+    "col_cpu_usage__last": [
+      45.0,
+      null,
+      50.0,
+      null
+    ],
+    "col_cpu_usage__max": [
+      45.0,
+      null,
+      50.0,
+      null
+    ],
+    "col_cpu_usage__mean": [
+      45.0,
+      null,
+      50.0,
+      null
+    ],
+    "col_cpu_usage__min": [
+      45.0,
+      null,
+      50.0,
+      null
+    ],
+    "col_cpu_usage__stddev": [
+      0.0,
+      null,
+      0.0,
+      null
+    ],
+    "col_http_request_duration__count": [
+      null,
+      100.0,
+      null,
+      null
+    ],
+    "col_http_request_duration__mean": [
+      null,
+      0.455,
+      null,
+      null
+    ],
+    "col_http_request_duration__p50": [
+      null,
+      0.1,
+      null,
+      null
+    ],
+    "col_http_request_duration__p75": [
+      null,
+      0.3857142857142858,
+      null,
+      null
+    ],
+    "col_http_request_duration__p90": [
+      null,
+      0.75,
+      null,
+      null
+    ],
+    "col_http_request_duration__p95": [
+      null,
+      1.0,
+      null,
+      null
+    ],
+    "col_http_request_duration__p99": [
+      null,
+      1.0,
+      null,
+      null
+    ],
+    "col_http_request_duration__sum": [
+      null,
+      45.5,
+      null,
+      null
+    ],
+    "col_http_requests__count__server_error": [
+      null,
+      0.0,
+      null,
+      0.0
+    ],
+    "col_http_requests__count__success": [
+      null,
+      0.0,
+      null,
+      0.0
+    ],
+    "col_http_requests__rate__server_error": [
+      null,
+      0.0,
+      null,
+      0.0
+    ],
+    "col_http_requests__rate__success": [
+      null,
+      0.0,
+      null,
+      0.0
+    ],
+    "col_memory_usage__last": [
+      70.0,
+      null,
+      72.0,
+      null
+    ],
+    "col_memory_usage__max": [
+      70.0,
+      null,
+      72.0,
+      null
+    ],
+    "col_memory_usage__mean": [
+      70.0,
+      null,
+      72.0,
+      null
+    ],
+    "col_memory_usage__min": [
+      70.0,
+      null,
+      72.0,
+      null
+    ],
+    "col_memory_usage__stddev": [
+      0.0,
+      null,
+      0.0,
+      null
+    ],
+    "col_http_requests__rate__client_error": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "col_http_requests__count__client_error": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "denormalize_gauges": {
+    "nrows": 2,
+    "ncols": 12,
+    "columns": [
+      "cpu_usage__last",
+      "cpu_usage__max",
+      "cpu_usage__mean",
+      "cpu_usage__min",
+      "cpu_usage__stddev",
+      "memory_usage__last",
+      "memory_usage__max",
+      "memory_usage__mean",
+      "memory_usage__min",
+      "memory_usage__stddev"
+    ],
+    "col_cpu_usage__last": [
+      50.0,
+      60.0
+    ],
+    "col_cpu_usage__max": [
+      50.0,
+      60.0
+    ],
+    "col_cpu_usage__mean": [
+      50.0,
+      60.0
+    ],
+    "col_cpu_usage__min": [
+      50.0,
+      60.0
+    ],
+    "col_cpu_usage__stddev": [
+      0.0,
+      0.0
+    ],
+    "col_memory_usage__last": [
+      70.0,
+      75.0
+    ],
+    "col_memory_usage__max": [
+      70.0,
+      75.0
+    ],
+    "col_memory_usage__mean": [
+      70.0,
+      75.0
+    ],
+    "col_memory_usage__min": [
+      70.0,
+      75.0
+    ],
+    "col_memory_usage__stddev": [
+      0.0,
+      0.0
+    ]
+  }
+}

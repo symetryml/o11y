@@ -1,0 +1,195 @@
+{
+  "series_agg": {
+    "mean": 2.75,
+    "sum": 11.0,
+    "min": 1.0,
+    "max": 5.0,
+    "std": 1.707825127659933,
+    "count": 4
+  },
+  "shift_forward_2": [
+    null,
+    null,
+    10.0,
+    20.0,
+    30.0
+  ],
+  "shift_backward_1": [
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    null
+  ],
+  "sub": [
+    -3.0,
+    2.0,
+    -3.0,
+    null
+  ],
+  "div": [
+    0.25,
+    null,
+    0.5,
+    null
+  ],
+  "abs": [
+    3.0,
+    2.0,
+    3.0,
+    null
+  ],
+  "rolling_mean_3_1": [
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    4.0
+  ],
+  "rolling_std_3_2": [
+    null,
+    0.7071067811865476,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "groupby_shift_1": [
+    null,
+    10.0,
+    20.0,
+    null,
+    100.0,
+    200.0
+  ],
+  "groupby_agg": {
+    "groups": [
+      "X",
+      "Y"
+    ],
+    "mean": [
+      1.5,
+      4.0
+    ],
+    "sum": [
+      3.0,
+      12.0
+    ],
+    "min": [
+      1.0,
+      3.0
+    ],
+    "max": [
+      2.0,
+      5.0
+    ],
+    "std": [
+      0.7071067811865476,
+      1.0
+    ],
+    "count": [
+      2,
+      3
+    ]
+  },
+  "pivot": {
+    "columns": [
+      "timestamp",
+      "entity",
+      "cpu",
+      "disk",
+      "mem"
+    ],
+    "nrows": 2,
+    "cpu": [
+      0.5,
+      0.6
+    ],
+    "mem": [
+      0.8,
+      0.7
+    ],
+    "disk": [
+      0.3,
+      0.4
+    ]
+  },
+  "melt": {
+    "nrows": 4,
+    "timestamp": [
+      "t1",
+      "t2",
+      "t1",
+      "t2"
+    ],
+    "feature": [
+      "cpu",
+      "cpu",
+      "mem",
+      "mem"
+    ],
+    "value": [
+      0.5,
+      0.6,
+      0.8,
+      0.7
+    ]
+  },
+  "concat_cols": {
+    "columns": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "nrows": 2
+  },
+  "delta_shift2": [
+    null,
+    null,
+    20.0,
+    20.0,
+    null,
+    null,
+    200.0,
+    200.0
+  ],
+  "replace_inf": [
+    1.0,
+    null,
+    null,
+    3.0
+  ],
+  "drop_duplicates": {
+    "nrows": 3,
+    "a": [
+      "x",
+      "y",
+      "z"
+    ],
+    "b": [
+      1.0,
+      2.0,
+      3.0
+    ]
+  },
+  "endswith_total": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "sort_by_a_b": {
+    "a": [
+      "A",
+      "A",
+      "B",
+      "C"
+    ],
+    "b": [
+      0.0,
+      1.0,
+      2.0,
+      3.0
+    ]
+  }
+}

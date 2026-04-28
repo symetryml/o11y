@@ -1,0 +1,26 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4319
+      http:
+        endpoint: 0.0.0.0:4320
+
+processors:
+  smlprocessor:
+    window_seconds: 60
+    include_deltas: false
+
+exporters:
+  smlexporter:
+    format: csv
+    output_path: stdout
+    dem_endpoint: ${env:SML_SERVER}
+    project_name: ${env:SML_PROJECT_NAME}
+
+service:
+  pipelines:
+    metrics:
+      receivers: [otlp]
+      processors: [smlprocessor]
+      exporters: [smlexporter]

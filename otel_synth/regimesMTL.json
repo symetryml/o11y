@@ -1,0 +1,82 @@
+{
+  "baseline": {
+    "metrics": "./regimes_data/baseline10m.csv",
+    "traces": "./regimes_data/baseline10m_traces.csv",
+    "logs": "./regimes_data/baseline10m_logs.csv"
+  },
+  "adFailure": {
+    "metrics": "./regimes_data/adFailure_20260318_135538.csv",
+    "traces": "./regimes_data/adFailure_20260318_135538_traces.csv",
+    "logs": "./regimes_data/adFailure_20260318_135538_logs.csv"
+  },
+  "adHighCpu": {
+    "metrics": "./regimes_data/adHighCpu_20260318_135002.csv",
+    "traces": "./regimes_data/adHighCpu_20260318_135002_traces.csv",
+    "logs": "./regimes_data/adHighCpu_20260318_135002_logs.csv"
+  },
+  "adManualGc": {
+    "metrics": "./regimes_data/adManualGc_20260318_135250.csv",
+    "traces": "./regimes_data/adManualGc_20260318_135250_traces.csv",
+    "logs": "./regimes_data/adManualGc_20260318_135250_logs.csv"
+  },
+  "recommendationCacheFailure": {
+    "metrics": "./regimes_data/recommendationCacheFailure_20260318_141223.csv",
+    "traces": "./regimes_data/recommendationCacheFailure_20260318_141223_traces.csv",
+    "logs": "./regimes_data/recommendationCacheFailure_20260318_141223_logs.csv"
+  },
+  "cartFailure": {
+    "metrics": "./regimes_data/cartFailure_20260318_140112.csv",
+    "traces": "./regimes_data/cartFailure_20260318_140112_traces.csv",
+    "logs": "./regimes_data/cartFailure_20260318_140112_logs.csv"
+  },
+  "emailMemoryLeak": {
+    "metrics": "./regimes_data/emailMemoryLeak_20260318_140648.csv",
+    "traces": "./regimes_data/emailMemoryLeak_20260318_140648_traces.csv",
+    "logs": "./regimes_data/emailMemoryLeak_20260318_140648_logs.csv"
+  },
+  "imageSlowLoad": {
+    "metrics": "./regimes_data/imageSlowLoad_20260318_134715.csv",
+    "traces": "./regimes_data/imageSlowLoad_20260318_134715_traces.csv",
+    "logs": "./regimes_data/imageSlowLoad_20260318_134715_logs.csv"
+  },
+  "kafkaQueueProblems": {
+    "metrics": "./regimes_data/kafkaQueueProblems_20260318_135825.csv",
+    "traces": "./regimes_data/kafkaQueueProblems_20260318_135825_traces.csv",
+    "logs": "./regimes_data/kafkaQueueProblems_20260318_135825_logs.csv"
+  },
+  "llmInaccurateResponse": {
+    "metrics": "./regimes_data/llmInaccurateResponse_20260318_141758.csv",
+    "traces": "./regimes_data/llmInaccurateResponse_20260318_141758_traces.csv",
+    "logs": "./regimes_data/llmInaccurateResponse_20260318_141758_logs.csv"
+  },
+  "llmRateLimitError": {
+    "metrics": "./regimes_data/llmRateLimitError_20260318_142046.csv",
+    "traces": "./regimes_data/llmRateLimitError_20260318_142046_traces.csv",
+    "logs": "./regimes_data/llmRateLimitError_20260318_142046_logs.csv"
+  },
+  "loadGeneratorFloodHomepage": {
+    "metrics": "./regimes_data/loadGeneratorFloodHomepage_20260318_141509.csv",
+    "traces": "./regimes_data/loadGeneratorFloodHomepage_20260318_141509_traces.csv",
+    "logs": "./regimes_data/loadGeneratorFloodHomepage_20260318_141509_logs.csv"
+  },
+  "paymentFailure1": {
+    "metrics": "./regimes_data/paymentFailure_20260318_134427.csv",
+    "traces": "./regimes_data/paymentFailure_20260318_134427_traces.csv",
+    "logs": "./regimes_data/paymentFailure_20260318_134427_logs.csv"
+  },
+  "paymentFailure2": {
+    "metrics": "./regimes_data/paymentFailure_20260318_152505.csv",
+    "traces": "./regimes_data/paymentFailure_20260318_152505_traces.csv",
+    "logs": "./regimes_data/paymentFailure_20260318_152505_logs.csv"
+  },
+  "paymentUnreachable": {
+    "metrics": "./regimes_data/paymentUnreachable_20260318_140400.csv",
+    "traces": "./regimes_data/paymentUnreachable_20260318_140400_traces.csv",
+    "logs": "./regimes_data/paymentUnreachable_20260318_140400_logs.csv"
+  },
+  "productCatalogFailure": {
+    "metrics": "./regimes_data/productCatalogFailure_20260318_140935.csv",
+    "traces": "./regimes_data/productCatalogFailure_20260318_140935_traces.csv",
+    "logs": "./regimes_data/productCatalogFailure_20260318_140935_logs.csv"
+  }
+}

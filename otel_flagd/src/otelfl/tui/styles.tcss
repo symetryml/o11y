@@ -1,0 +1,128 @@
+Screen {
+    layout: grid;
+    grid-size: 2 2;
+    grid-gutter: 1;
+}
+
+Header {
+    dock: top;
+}
+
+Footer {
+    dock: bottom;
+}
+
+#flag-panel {
+    row-span: 1;
+    column-span: 1;
+    height: 100%;
+    border: solid $primary;
+}
+
+#load-panel {
+    row-span: 1;
+    column-span: 1;
+    height: 100%;
+    border: solid $primary;
+}
+
+#stats-panel {
+    row-span: 1;
+    column-span: 1;
+    height: 100%;
+    border: solid $primary;
+}
+
+#timeline-panel {
+    row-span: 1;
+    column-span: 1;
+    height: 100%;
+    border: solid $primary;
+}
+
+.flag-line {
+    height: 1;
+    padding: 0;
+}
+
+.flag-multi {
+    height: 3;
+    padding: 0;
+}
+
+.multi-flag-label {
+    width: auto;
+    min-width: 20;
+    height: 1;
+    padding: 0;
+    content-align: left middle;
+}
+
+.multi-flag-select {
+    width: 1fr;
+    max-width: 20;
+    height: 3;
+}
+
+#load-status-row {
+    height: 1;
+    layout: horizontal;
+}
+
+#load-mode-label {
+    width: 1fr;
+    height: 1;
+    padding: 0 1;
+    content-align: right middle;
+}
+
+#load-mode-select {
+    width: 100%;
+    max-width: 20;
+    height: 3;
+}
+
+#load-controls {
+    height: auto;
+    layout: horizontal;
+}
+
+#load-controls Input {
+    width: 1fr;
+    margin: 0 1;
+}
+
+#load-buttons {
+    height: auto;
+    layout: horizontal;
+}
+
+#load-buttons Button {
+    margin: 0 1;
+}
+
+ScenarioModal {
+    align: center middle;
+}
+
+#scenario-dialog {
+    width: 70;
+    height: auto;
+    max-height: 80%;
+    border: thick $accent;
+    background: $surface;
+    padding: 1 2;
+}
+
+#scenario-title {
+    text-style: bold;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 1 0;
+    color: $accent;
+}
+
+#scenario-list {
+    height: auto;
+    max-height: 60;
+}

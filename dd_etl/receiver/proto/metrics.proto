@@ -1,0 +1,37 @@
+// Minimal Datadog Agent v2 MetricPayload definition.
+// Source: https://github.com/DataDog/agent-payload/blob/master/proto/metrics/agent_payload.proto
+syntax = "proto3";
+
+package datadog.agentpayload;
+
+message MetricPayload {
+  repeated MetricSeries series = 1;
+}
+
+message MetricSeries {
+  repeated Resource resources = 1;
+  string metric = 2;
+  repeated string tags = 3;
+  repeated Point points = 4;
+  MetricType type = 5;
+  string unit = 6;
+  string source_type_name = 7;
+  int64 interval = 8;
+}
+
+message Point {
+  double value = 1;
+  int64 timestamp = 2;
+}
+
+message Resource {
+  string type = 1;
+  string name = 2;
+}
+
+enum MetricType {
+  UNSPECIFIED = 0;
+  COUNT = 1;
+  RATE = 2;
+  GAUGE = 3;
+}
